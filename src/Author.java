@@ -12,6 +12,7 @@ public class Author extends Person {
         books = new ArrayList();
     }
 
+    @SuppressWarnings("unchecked")
     /**
      * @deprecated Use publishedBooks instead
      */
@@ -20,10 +21,12 @@ public class Author extends Person {
         return books;
     }
 
+    @SuppressWarnings("unchecked")
     public List<String> publishedBooks() {
         return books;
     }
 
+    @SuppressWarnings("unchecked")
     public void addBook(String book) {
         books.add(book);
     }
